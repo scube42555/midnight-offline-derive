@@ -1,0 +1,22 @@
+[package]
+name = "midnight-offline-derive"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+blst = { version = "=0.3.17", features = ["portable"] }
+#sha2 = "0.10"
+bip39 = "2.0"
+#bip32 = { version = "0.6.0", features = ["alloc"] }
+bip32 = "0.5"
+bech32 = "0.9"
+ed25519-bip32 = "0.4"
+pbkdf2 = "0.12"
+sha2 = "0.10"
+blake2 = "0.10"
+num-bigint = "0.4"
+midnight-zswap          = { git = "https://github.com/midnightntwrk/midnight-ledger.git", rev = "9f9842e" }
+midnight-base-crypto    = { git = "https://github.com/midnightntwrk/midnight-ledger.git", rev = "9f9842e" }
+midnight-coin-structure = { git = "https://github.com/midnightntwrk/midnight-ledger.git", rev = "9f9842e" }
+midnight-ledger = { git = "https://github.com/midnightntwrk/midnight-ledger.git", rev = "9f9842e" }
+midnight-serialize = { git = "https://github.com/midnightntwrk/midnight-ledger.git", rev = "9f9842e", package = "midnight-serialize" }
